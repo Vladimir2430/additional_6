@@ -1,26 +1,26 @@
 module.exports = function zeros(expression) {
-   var a= expression.split('*');
- var aOfFactorials = [];
+   var arr = expression.split('*');
+ var arrOfFactorials = [];
  var finalResult = 1;
- for(var i = 0;i < a.length;i++){
+ for(var i = 0;i < arr.length;i++){
 	var temp = null;
-	var b = a[i].split('');
-	for(var j = 0; j < b.length; j++){
-		if(b[j] === '!'){
+	var subArr = arr[i].split('');
+	for(var j = 0; j < subArr.length; j++){
+		if(subArr[j] === '!'){
 			temp++;
 		}
 	}
-	var numberToFact = parseInt(a[i]);
+	var numberToFact = parseInt(arr[i]);
 	switch(temp){
-		case 1: aOfFactorials.push(factorial(numberToFact));break;
-		case 2: aOfFactorials.push(factorialEven(numberToFact));break;
+		case 1: arrOfFactorials.push(factorial(numberToFact));break;
+		case 2: arrOfFactorials.push(factorialEven(numberToFact));break;
 	}
 	
  }
-		for(var k = 0;k < aOfFactorials.length;k++){
-			result0*=aOfFactorials[k];
+		for(var k = 0;k < arrOfFactorials.length;k++){
+			finalResult*=arrOfFactorials[k];
 		}
-		return result0;
+		return finalResult;
  
  function factorial(n) {
   return n ? n * factorial(n - 1) : 1;
