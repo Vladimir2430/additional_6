@@ -1,5 +1,6 @@
 module.exports = function zeros(expression) {
   let aaa = expression.split('*');
+  let result=[];
   let two = 0;
   let five = 0;
   let ten = 0;
