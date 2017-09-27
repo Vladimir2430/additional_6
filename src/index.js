@@ -18,7 +18,7 @@ module.exports = function zeros(expression) {
 };
 
 function factorial(i,j){
-	let ccc=i.replace(new RegExp('!','g'),'');
+	let ccc=i.replace(new RegExp('!','d'),'');
 	let result=[];
 	for(let n=ccc;n>0;n-=j){
 		result.push(n);
