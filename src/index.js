@@ -7,7 +7,7 @@ module.exports = function zeros(expression) {
   for (let i of aaa) {
     if(i.endsWith('!!')) {
       result=factorial(i,2);
-    } else (i.endsWith('!')) {
+    } else if (i.endsWith('!')) {
       result=factorial(i,1);
     }
     two+=count(result,2);
