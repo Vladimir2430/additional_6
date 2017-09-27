@@ -1,13 +1,12 @@
 module.exports = function zeros(expression) {
   let aaa = expression.split('*');
-  let result = [];
   let two = 0;
   let five = 0;
   let ten = 0;
   for (let i of aaa) {
-    if(i.bbb('!!')) {
+    if(i.endsWith('!!')) {
       result=factorial(i,2);
-    } else (i.bbb('!')) {
+    } else (i.endsWith('!')) {
       result=factorial(i,1);
     }
     two+=count(result,2);
